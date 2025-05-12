@@ -1,8 +1,8 @@
 repos:
   - repo: https://github.com/astral-sh/ruff-pre-commit
-    rev: v0.4.4
+    rev: v0.11.9
     hooks:
       - id: ruff
         args: ["--fix"]
         # stages 字段已更新，不会再用过时的名称
-        stages: [push]  # 举例：也可以用 push、commit-msg 等，具体看你的需求
+        stages: [pre-push]  # 举例：也可以用 push、commit-msg 等，具体看你的需求
